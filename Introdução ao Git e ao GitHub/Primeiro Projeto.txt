@@ -1,0 +1,380 @@
+**Introdução ao Git e ao GitHub**
+
+![image-20220331200804427](C:\Users\nilso\AppData\Roaming\Typora\typora-user-images\image-20220331200804427.png)
+
+
+
+
+
+| Descrição     | Nesse curso vamos aprender um pouco da história do Git e como ele se tornou essencial para otimizar<br/>projetos dos desenvolvedores. Também vamos conhecer seus principais comandos, como funciona a<br/>plataforma e como ela pode simplificar o seu trabalho |
+| :------------ | ------------------------------------------------------------ |
+| **Produzido** | **Nilson dos Santos**- https://github.com/nilsonsantos37     |
+
+
+
+​    **Indice**
+
+ **Capitulo 1 - Introdução ao Git**
+
+- O Que é o Git?
+- Desempenho
+- Segurança
+- Flexibilidade
+- Git é um projeto de código aberto de qualidade
+
+  **Capitulo 2 - Navegação via command line interface e instalação**
+
+- Instalando o GIT - (Windows)
+- Instalando o GIT - (Unix)
+
+**Objetivos:**
+
+- Mudar de pastas
+- Listar as pastas
+- Criar pastas/arquivos
+- Deletar pastas/arquivos
+
+**Sistema Windows**
+
+- cd = (mudar pastas
+
+- dir = (listar pastas)
+
+- mkdir = (criar pastas/arquivos)
+
+- del = (deletar arquivos)
+
+- rmdir = (deletar a pasta com todos seus arquivos)
+
+- cls = (limpar a tela)
+
+- Tecla Tab = (alto completa um nome na hora de digitar)
+
+  **Sistema Unix**
+
+- cd = (mudar pastas)
+- ls = (listar pastas)
+- mkdir = (criar pastas/arquivos)
+- rm - rf = (deletar pastas/arquivos)
+- clear = (limpar a tela) ou atalho
+- Tecla Tab = (alto completa um nome na hora de digitar)
+
+ **Capitulo 3 - Entendendo como o Git funciona por baixo dos panos**
+
+ **Tópicos fundamentais para entender o funcionamento do Git**
+
+- **SHA1**
+- **Objetos internos do git**
+  1. Blobs
+  2. Trees
+  3. Commit
+
+- **Sistema Distribuído**
+
+  **Captulo 4  - Ciclo de vida dos arquivos no Git**
+
+ **Passo a passo no ciclo de vida**
+
+1. Untracked
+2. Unmodified
+3. Modifies
+4. Staged
+
+**Primeiros comandos com Git**
+
+1.  **Iniciando o Git e Criando um commit**
+
+-  Comandos
+- Criando um Repositório
+- Adicionando um Arquivo
+
+ **Capitulo 5
+
+1. 
+
+​    **Capitulo 6 - Introdução ao GitHub**
+
+- Comando para configurar seu perfil no GIT
+
+- Criando uma conta no GitHub
+
+- Configuração do seu Repositório na sua maquina 
+
+  **Capitulo 7 - Resolvendo conflitos**
+
+- Como os conflitos acontecem no GitHub e como resolvê-los
+- Como clonar um repositório público do GitHub na sua maquina
+
+------
+
+
+
+ **Capitulo 1 - Introdução ao Git**
+
+- **O Que é o Git?**
+
+   Git é um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.
+  
+  ·    Abordagem **peer to peer** ao contrário de outros como o Subversion (SVN) que seguem um modelo baseado em **cliente-servidor**.
+  
+  ·    Utilização de **branch**, permitindo ramificações do código
+
+  ·    Operações **atômicas**. Evitando código instável.
+
+- **Desempenho**
+
+  Diferente de alguns softwares de controle de versão, o Git não se deixa enganar pelos nomes dos arquivos ao
+  determinar qual deve ser o armazenamento e o histórico de versões da árvore de arquivos. Em vez disso, o Git se
+  concentra no conteúdo do arquivo. O formato do objeto dos arquivos de repositório do Git usa uma combinação de
+  codificação delta (armazenamento de diferenças de conteúdo) e compactação e armazena com clareza o
+  conteúdo do diretório e os objetos de metadados da versão.
+
+  
+
+- **Segurança**
+
+  O Git foi projetado com a integridade do código-fonte gerenciado como uma prioridade. O conteúdo dos arquivos,
+  bem como os verdadeiros relacionamentos entre arquivos e diretórios, versões, tags e commits, todos esses
+  objetos no repositório do Git são protegidos com um algoritmo de hash de criptografia seguro chamado SHA1. Isso
+  protege o código e o histórico de alterações contra alterações acidentais e maliciosas e garante que o histórico
+  tenha rastreabilidade total.
+  Com o Git, você pode ter certeza de ter um histórico de conteúdo autêntico do código-fonte.
+
+  
+
+- **Flexibilidade**
+
+  O Git foi projetado para tratar os branches e tags como cidadãos de primeira classe (ao contrário do SVN e
+  operações que afetam branches e tags (como mesclagem ou reversão) também são armazenadas como parte do
+  histórico de alterações. Nem todos os sistemas de controle de versão apresentam esse nível de rastreamento.
+
+  
+
+- **Git é um projeto de código aberto de qualidade**
+
+O código aberto reduz o custo para desenvolvedores amadores, pois eles podem usar o Git sem pagar uma taxa.
+Para uso em projetos de código aberto, o Git é sem dúvida o sucessor das gerações anteriores de sistemas bemsucedidos
+de controle de versão de código aberto, SVN e CVS.
+
+
+
+
+
+  **Capitulo 2 - Navegação via command line interface e instalação**
+
+
+
+- **Instalando o GIT - (Windows)**
+
+**-**Link para Download - https://git-scm.com/
+**-**Marcar as opções Git Bash Here e Git Gui Here
+**-**Escolher configuração para windows ou unix
+
+- **Instalando o GIT - (Unix**
+
+   **-**Link para Download - https://git-scm.com/
+  **-**Escolher o código conforme sua distribuição de sistema (Ubuntu, Fedora)
+  **-**Usar o código no Terminal
+  **-**git --version (para verificar a versão instalada)
+
+**Objetivos**:
+
+ **Sistema Windows **
+
+- **Mudar de pastas**
+
+  **-**cd = (mudar pastas)
+
+- **Listar as pastas**
+
+  **-**dir = (listar pastas)
+
+- **Criar pastas/arquivos**
+
+  **-**mkdir = (criar pastas/arquivos)
+
+- **Deletar pastas/arquivos**
+
+**-**del = (deletar arquivos)
+
+
+
+**Sistema Unix**
+
+- cd = (mudar pastas)
+- ls = (listar pastas)
+- mkdir = (criar pastas/arquivos)
+- rm - rf = (deletar pastas/arquivos)
+- clear = (limpar a tela) ou atalho
+- Tecla Tab = (alto completa um nome na hora de digitar)
+
+ **Capitulo 3 - Entendendo como o Git funciona por baixo dos panos**
+
+ **Tópicos fundamentais para entender o funcionamento do Git**
+
+- **SHA1**
+
+  criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA). A encriptação gera conjunto de caracteres identificador de 40 dígitos. É uma forma curta de representar um arquivo.
+  Comando que gera o SHA1 = openssl sha1 (nome do arquivo.txt)
+  Chave gerada = SHA1(dio.txt)= 476ad3f360ced25383c25d13eae57f59e30cecb9
+  Quando você mudar a informação no arquivo e executa o comando ele muda a chave SHA1 = SHA1(dio.txt)=
+  bf3bb2f68cdabbf6a27b73f876b350af80af6953
+  Se você alterar a informação no arquivo para a que estava anteriormente e executar o comando SHA1 novamente,
+  ele retorna para a chave anterior = SHA1(dio.txt)= 476ad3f360ced25383c25d13eae57f59e30cecb9
+
+  **Resultados Final**
+  Arquivo Versao1 = 476ad3f360ced25383c25d13eae57f59e30cecb9
+  Arquivo Modificado = bf3bb2f68cdabbf6a27b73f876b350af80af6953
+  Arquivo Modificado Versao1 = 476ad3f360ced25383c25d13eae57f59e30cecb9
+
+- **Objetos internos do git**
+
+  1. **Blobs**
+
+     Git gera SHA1 e armazena Meta-Dados (bloco básico de composição) Possuem o SHA1 do arquivo
+     echo 'conteudo' | git hash-object --stdin = gera um SHA1
+     echo -e 'blob 9\0conteudo' | openssl sha1 = gera mesmo SHA1
+
+  2. **Trees**
+
+     Armazenam Blobs (armazena e aponta para um tipo de blobs)
+     E responsável por toda a estrutura por montar a estrutura de um arquivo
+     Possuem o SHA1 dos meta-dados
+
+  3. **Commit**
+
+     É o objeto mais importante, que junta tudo!
+     Ele aponta para uma arvore, parente, autor, mensagem.
+     O SHA1 desse commit é o hash de toda essa informação.
+
+- **Sistema Distribuído**
+
+  O Git foi projetado com a integridade do código-fonte gerenciado como uma prioridade. O conteúdo dos arquivos,
+  bem como os verdadeiros relacionamentos entre arquivos e diretórios, versões, tags e commits, todos esses
+  objetos no repositório do Git são protegidos com um algoritmo de hash de criptografia seguro chamado SHA1. Isso
+  protege o código e o histórico de alterações contra alterações acidentais e maliciosas e garante que o histórico
+  tenha rastreabilidade total.
+
+  
+
+   **Captulo 4 - Ciclo de vida dos arquivos no Git**
+
+![image-20220331200212570](C:\Users\nilso\AppData\Roaming\Typora\typora-user-images\image-20220331200212570.png)
+
+
+
+ **Passo a passo no ciclo de vida**
+
+1. **Tracked**
+
+   Tracked são os arquivos que o GIT já tem ciência deles.
+
+2. **Untracked**
+
+   Untracked são arquivos que o GIT ainda não tem ciência deles.
+
+3. **Modified**
+
+   Modified são os arquivos que foram modificados.
+
+4. **Staged**
+
+   Staged são os arquivos que já foram adicionados no projetos e estão esperando o commit.
+
+   
+
+   Arquivos dentro do Tracked são Unmodified, Modified e Staged.
+   **Unmodified**:é o arquivo que não sofreu nenhuma alteração.
+   **Modified**: é o arquivo que sofreu alguma alteração.
+   **Staged**: é o conceito chave de onde ficam os arquivos que estão esperando o commit para serem finalizados no
+   projeto.
+   Arquivo Untracked é o arquivo que você acabou de criar e o git ainda não tem ciência dele.
+   O Comando git add adiciona o arquivo para o modo Staged.
+   Quando faz alterações no arquivo, o git confere a chave **SHA1** desse arquivo, e caso tenha diferença nessa
+   chave, ela muda de Unmodified para Modified, sendo necessário usar o git add para mudar esse arquivo para o
+   modo Staged.
+   Quando se deleta um arquivo, ele volta para o modo Untracked.
+   Quando o arquivo esta no modo Stage, ele está aguardando o Commit para finalizar o processo virando um
+   arquivo commit.
+   O Comando commit, finaliza todo o processo, transformando os arquivos novamente em Unmodified.
+
+   **Servidor**
+
+   Remote Repository (Quando você empurra um commit para um repositório)
+   Introdução ao Git e ao GitHub 5
+
+   **Ambiente de desenvolvimento**
+   Working Directory (Seu Computador)
+   Staging Area (Quando criado, modificado ou adicionado um arquivo no Git)
+   Local Repository (Quando é efetuado um Commit)
+   Comando git status = Mostra as informações sobre a situação atual do seu repositório.
+
+    **Capitulo 5 - Primeiros comandos com Git**
+
+    **Iniciando o Git e Criando um commit**
+
+   **-**Iniciar o GIT
+   **-**Iniciar o versionamento
+   **-**Criar um commi.
+
+-  **Comandos**
+
+  **-**git init (iniciar repositorio no git)
+  **-**git add (mover arquivos e dar inicio ao versionamento)
+  **-**git commit (criar commites)
+
+- **Criando um Repositório**
+
+  1. Acessar via terminal a pasta do seu projeto
+  2. git init = Efetuar esse comando para criar uma pasta oculta .git
+  3. ls -a = (mostrar arquivos e pastas ocultas)
+
+- **Adicionando um Arquivo**
+
+  1. Adicionar um arquivo na pasta do seu projeto (Markdown) (md)
+  2. git add . = Comando para adicionar as alterações feitas em todos os arquivos do projeto
+  3. git commit -m "" = Comando para fazer um commit do seu projeto (colocar uma mensagem dentro das strings "").
+
+​    **Capitulo 6 - Introdução ao GitHub**
+
+- **Comando para configurar seu perfil no GIT**
+
+  1. git config --global --unset user.email (comando para limpar o seu email no perfil)
+  2. git config --global --unset user.nickname (comando para limpar o seu user no perfil)
+  3. git config --list (comando para ver a lista de configurações)
+  4. git config --global user.email "seu email"(comando para adicionar o seu email no perfil)
+  5. git config --global user.nickname "seu nome"(comando para adicionar o seu user no perfil)
+
+- **Criando uma conta no GitHub**
+
+  1. Criar uma conta no GitHub - https://github.com/
+  2. Criar um repositório na Parte Repository / News
+  3. Clicar em Creater Repository
+  4. Criar ou não um arquivo README
+  5. Marcar seu repositório como público ou privado
+  6. Colocar uma descrição para o seu repositório
+  7. Colocar um nome no seu repositório e clique  no botão create repository.
+
+- **Configuração do seu Repositório na sua maquina  **
+
+  1. Copiar o caminho https do seu repositório, que o GitHub vai te fornecer,  ela fica localizada no botão **código** dentro do repositório que foi criado na conta GitHub, clique  em copiar , vá para a sua maquina, com uma pasta criada por você  dentro da pasta Documentos, abra esta pasta e abra o terminal do **gitbash** com o botão esquerdo do mouse, e inicie a clonagem do seu repositório inserindo o seguinte comando:
+  2. **git clone** (link do seu repositório GitHub) = comando para adicionar seu repositório GitHub a sua maquina local.
+  3. Usando o código **cd**  (nome da  pasta onde vc clonou seu repositório), para poder trabalhar dentro da pasta criada lá no github.
+  4. comando **git status** para verificar se está tudo certo com o seu repositório, e se ele já está dentro da nossa maquina.
+  5. **origin** = apelido do seu link repositório.
+  6. **git remote -v** = Comando para listar seus repositórios cadastrados.
+  7. **git push origin master** = Comando para empurrar seu repositório local para o remoto.
+
+  **Capitulo 7 - Resolvendo conflitos**
+
+- **Como os conflitos acontecem no GitHub e como resolvê-los**
+
+  **git pull origin master** = Comando para puxar um conteúdo do seu repositório remoto,
+  para resolver , assim que você puxar o conteúdo do seu repositório remoto, verifique as modificações que devem
+  ser feitas, faças as devidas alterações e depois faça o passo de subir as suas alterações para o GitHub novamente.
+
+- **Como clonar um repositório público do GitHub na sua maquina**
+
+Entre em algum repositório público e clique no botão CODE
+Copie esse link e vá no seu terminal Git e faça o seguinte passo
+git clone (link).
